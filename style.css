@@ -1,0 +1,251 @@
+
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+     background-color: antiquewhite;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+        /* First Box */
+.container1{
+    border: 1px solid rgb(146, 143, 143);
+    display:flex;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);  
+    align-items:center; 
+}
+.card1{
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: #e49c05;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    animation: container1  2s infinite;
+   
+}
+
+.card1 p{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+        /*Second Box */
+.container2{
+    border: 1px solid rgb(146, 143, 143);
+    height: 300px;
+    width: 300px;
+    display: flex; 
+    align-items: end;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.card2 p{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+ .card2{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        color: white;
+        background-color:#008c0c;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        animation: container2  1s infinite;
+        
+        
+    }
+    
+
+          /* Third Box */
+
+.container3{
+    border: 1px solid rgb(146, 143, 143);
+    height: 300px;
+    width: 300px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.card3 p{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+ .card3{
+        height: 150px;
+        width: 80px;
+        color: white;
+        background-color:#cf0000;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        animation: container3 2s infinite;
+        
+    }
+    
+
+            /* Fourth Box */
+.container4{
+    border: 1px solid rgb(146, 143, 143);
+    height: 300px;
+    width: 300px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.card4 p{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+ .card4{
+        height: 100px;
+        width: 120px;
+        color: white;
+        background-color:#57007c;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        position: relative;
+        animation: container4  2s infinite;
+
+    }
+    
+         /* Fiveth Box */
+
+.container5{
+    border: 1px solid rgb(146, 143, 143);
+    height: 300px;
+    width: 300px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.card5 p{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+ .card5{
+        height: 100px;
+        width: 100px;
+        background-color:#088cdf;
+        color: white;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .zoom p{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+     .zoom{
+            height: 115px;
+            width: 80px;
+            background-color:#088cdf;
+            color: white;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            animation: zoom 2s infinite;
+        }
+
+
+        /* Sixth Box */    
+.container6{
+    border: 1px solid rgb(146, 143, 143);
+    height: 300px;
+    width: 300px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+     
+
+ .card6{
+        height: 100px;
+        width: 100px;
+        background-color:#f300b2;
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        animation: container6  2s infinite;
+    }
+    
+
+
+    .card5:hover{
+       transition: linear 1s;
+       transform: scale(1.5);
+        
+    }
+
+    @keyframes  container1{
+        100%{
+             transform: translate(140px,0px);
+        }
+    }
+
+    @keyframes container2{
+        
+        50%{
+            transform: translate(0px,-100px);
+        }   
+    }
+
+    @keyframes container3{
+        50%{
+            transform: rotatey(180deg);
+        }
+    }
+
+    @keyframes container4{
+        100% {transform: rotate(360deg);}
+    }
+
+    
+
+    @keyframes container6{
+
+        50%{
+            transform: rotate(180deg);
+        }
+        100%{
+            width:200px ;
+            height: 200px; 
+        }
+    }
+
+    @keyframes zoom{
+        50%{
+            transform: scale(1.5);
+        }
+    }
+
+
+
+
